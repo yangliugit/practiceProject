@@ -114,7 +114,6 @@ if __name__ == '__main__':
 
     try:
         geta = GetAttendance(user, password, month)
-        # geta = GetAttendance("liuyang", "qwe@1234", "2018-07")
         calc = geta.calc_data()
         send_info(user_info)
         print "\n*****The following is statistic data *****"

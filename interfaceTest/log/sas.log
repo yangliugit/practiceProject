@@ -1,0 +1,20 @@
+[2016-11-23 17:43:16,066] [INFO] 第1条用例内容是[[u'\u54c1\u503cGO', 1.0, u'CheckPhoneNo', u'\u68c0\u67e5\u65e0\u8bb0\u5f55\u7684\u53f7\u7801\u8fd4\u56de\u6b63\u5e38', u'post', u'http://test.dmc.51pinzhi.cn/api/api/Inbound/GetLoanLimit', u"{'idcard':'321302199005201439'}", u'{"ret":true,"msg":"\u67e5\u8be2\u6210\u529f","data":{"OrderNum":0,"Flag":0,"Total":10000.0,"Remain":10000.0}}', u'', u'\u5218\u6d0b', u'', u'']]
+[2016-11-23 17:43:16,066] [INFO] 第2条用例内容是[[u'\u54c1\u503cGO', 1.0, u'CheckPhoneNo', u'\u68c0\u67e5\u65e0\u8bb0\u5f55\u7684\u53f7\u7801\u8fd4\u56de\u6b63\u5e38', u'post', u'http://test.dmc.51pinzhi.cn/api/api/Inbound/GetLoanLimit', u"{'idcard':'321302199005201439'}", u'{"ret":true,"msg":"\u67e5\u8be2\u6210\u529f","data":{"OrderNum":0,"Flag":0,"Total":10000.0,"Remain":10000.0}}', u'', u'\u5218\u6d0b', u'', u''], [u'\u54c1\u503cGO', 2.0, u'CheckPhoneNo', u'\u68c0\u67e5\u65e0\u8bb0\u5f55\u7684\u53f7\u7801\u8fd4\u56de\u6b63\u5e38', u'GET', u'http://test.dmc.51pinzhi.cn/api/api/Inbound/GetLoanLimit', u"{'idcard':'321302199005201439'}", u'{"ret":true,"msg":"\u67e5\u8be2\u6210\u529f","data":{"OrderNum":0,"Flag":0,"Total":10000.0,"Remain":10000.0}}', u'', u'\u5218\u6d0b', u'', u'']]
+[2016-11-23 17:43:16,066] [INFO] 第3条用例内容是[[u'\u54c1\u503cGO', 1.0, u'CheckPhoneNo', u'\u68c0\u67e5\u65e0\u8bb0\u5f55\u7684\u53f7\u7801\u8fd4\u56de\u6b63\u5e38', u'post', u'http://test.dmc.51pinzhi.cn/api/api/Inbound/GetLoanLimit', u"{'idcard':'321302199005201439'}", u'{"ret":true,"msg":"\u67e5\u8be2\u6210\u529f","data":{"OrderNum":0,"Flag":0,"Total":10000.0,"Remain":10000.0}}', u'', u'\u5218\u6d0b', u'', u''], [u'\u54c1\u503cGO', 2.0, u'CheckPhoneNo', u'\u68c0\u67e5\u65e0\u8bb0\u5f55\u7684\u53f7\u7801\u8fd4\u56de\u6b63\u5e38', u'GET', u'http://test.dmc.51pinzhi.cn/api/api/Inbound/GetLoanLimit', u"{'idcard':'321302199005201439'}", u'{"ret":true,"msg":"\u67e5\u8be2\u6210\u529f","data":{"OrderNum":0,"Flag":0,"Total":10000.0,"Remain":10000.0}}', u'', u'\u5218\u6d0b', u'', u''], [u'\u54c1\u503cGO', 3.0, u'CheckPhoneNo', u'\u68c0\u67e5\u65e0\u8bb0\u5f55\u7684\u53f7\u7801\u8fd4\u56de\u6b63\u5e38', u'post1', u'http://test.dmc.51pinzhi.cn/api/api/Inbound/GetLoanLimit', u"{'idcard':'321302199005201439'}", u'{"ret":true,"msg":"\u67e5\u8be2\u6210\u529f","data":{"OrderNum":0,"Flag":0,"Total":10000.0,"Remain":10000.0}}', u'', u'\u5218\u6d0b', u'', u'']]
+[2016-11-23 17:43:16,068] [INFO] 下面执行第1条测试用例
+[2016-11-23 17:43:16,068] [INFO] POST请求链接是http://test.dmc.51pinzhi.cn/api/api/Inbound/GetLoanLimit, 参数是{'idcard':'321302199005201439'}
+[2016-11-23 17:43:16,075] [INFO] Starting new HTTP connection (1): test.dmc.51pinzhi.cn
+[2016-11-23 17:43:17,168] [DEBUG] "POST /api/api/Inbound/GetLoanLimit HTTP/1.1" 200 97
+[2016-11-23 17:43:17,170] [INFO] POST请求结果是{"ret":true,"msg":"查询成功","data":{"OrderNum":0,"Flag":0,"Total":10000.0,"Remain":10000.0}}
+[2016-11-23 17:43:17,171] [INFO] pass
+[2016-11-23 17:43:17,171] [INFO] 下面执行第2条测试用例
+[2016-11-23 17:43:17,171] [INFO] GET请求链接是http://test.dmc.51pinzhi.cn/api/api/Inbound/GetLoanLimit, 参数是{'idcard':'321302199005201439'}
+[2016-11-23 17:43:17,174] [INFO] Starting new HTTP connection (1): test.dmc.51pinzhi.cn
+[2016-11-23 17:43:17,385] [DEBUG] "GET /api/api/Inbound/GetLoanLimit?%7B'idcard':'321302199005201439'%7D HTTP/1.1" 405 62
+[2016-11-23 17:43:17,387] [INFO] GET请求结果是{"Message":"请求的资源不支持 http 方法“GET”。"}
+[2016-11-23 17:43:17,387] [INFO] ERROR，返回结果与预期结果不一致！返回结果为 {"Message":"请求的资源不支持 http 方法“GET”。"}
+预期结果为：{"ret":true,"msg":"查询成功","data":{"OrderNum":0,"Flag":0,"Total":10000.0,"Remain":10000.0}}
+fail
+[2016-11-23 17:43:17,387] [INFO] 下面执行第3条测试用例
+[2016-11-23 17:43:17,387] [INFO] 当前仅支持get和post请求，请检查用例id为3的请求方式！
+[2016-11-23 17:43:17,388] [INFO] fail
